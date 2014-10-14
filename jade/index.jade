@@ -13,7 +13,7 @@ html
   body(ng-app='mlf-calculator', ng-controller='MainCtrl')
     .bar.bar-header.bar-calm
         .logo.i.icon.ion-calculator
-        h1.title &nbsp; Calc++
+        h1.title Calc++
 
     ion-content.has-header
       .display {{display}}
@@ -36,9 +36,9 @@ html
         a.button(ng-click='addDisplay(".")') .
         a.button(ng-click='addDisplay(0)') 0
         a.button(ng-click='clearDisplay()') C
-        a.button.i.icon.ion-(ng-click='calculate("/")') /
+        a.button(ng-click='calculate("/")') /
       .button-bar
-        a.button.i.icon.ion-(ng-click='answer()') =
+        a.button.button-balanced(ng-click='answer()') =
 
       .memory {{memory}}
       .operator {{operator}}

@@ -14,15 +14,15 @@
   <body ng-app="mlf-calculator" ng-controller="MainCtrl">
     <div class="bar bar-header bar-calm">
       <div class="logo i icon ion-calculator"></div>
-      <h1 class="title">&nbsp; Calc++</h1>
+      <h1 class="title">Calc++</h1>
     </div>
     <ion-content class="has-header">
       <div class="display">{{display}}</div>
       <div class="button-bar"><a ng-click="addDisplay(7)" class="button">7</a><a ng-click="addDisplay(8)" class="button">8</a><a ng-click="addDisplay(9)" class="button">9</a><a ng-click="calculate(&quot;+&quot;)" class="button i icon ion-plus"></a></div>
       <div class="button-bar"><a ng-click="addDisplay(4)" class="button">4</a><a ng-click="addDisplay(5)" class="button">5</a><a ng-click="addDisplay(6)" class="button">6</a><a ng-click="calculate(&quot;-&quot;)" class="button i icon ion-minus"></a></div>
       <div class="button-bar"><a ng-click="addDisplay(1)" class="button">1</a><a ng-click="addDisplay(2)" class="button">2</a><a ng-click="addDisplay(3)" class="button">3</a><a ng-click="calculate(&quot;*&quot;)" class="button i icon ion-close"></a></div>
-      <div class="button-bar"><a ng-click="addDisplay(&quot;.&quot;)" class="button">.</a><a ng-click="addDisplay(0)" class="button">0</a><a ng-click="clearDisplay()" class="button">C</a><a ng-click="calculate(&quot;/&quot;)" class="button i icon ion-">/</a></div>
-      <div class="button-bar"><a ng-click="answer()" class="button i icon ion-">=</a></div>
+      <div class="button-bar"><a ng-click="addDisplay(&quot;.&quot;)" class="button">.</a><a ng-click="addDisplay(0)" class="button">0</a><a ng-click="clearDisplay()" class="button">C</a><a ng-click="calculate(&quot;/&quot;)" class="button">/</a></div>
+      <div class="button-bar"><a ng-click="answer()" class="button button-balanced">=</a></div>
       <div class="memory">{{memory}}</div>
       <div class="operator">{{operator}}</div>
     </ion-content>
