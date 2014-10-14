@@ -12,7 +12,8 @@ html
     script(src='js/main_controller.js')
   body(ng-app='mlf-calculator', ng-controller='MainCtrl')
     .bar.bar-header.bar-calm
-        h1.title Calc++
+        .logo.i.icon.ion-calculator
+        h1.title &nbsp; Calc++
 
     ion-content.has-header
       .display {{display}}
@@ -20,24 +21,24 @@ html
         a.button(ng-click='addDisplay(7)') 7
         a.button(ng-click='addDisplay(8)') 8
         a.button(ng-click='addDisplay(9)') 9
-        a.button(ng-click='calculate("+")') +
+        a.button.i.icon.ion-plus(ng-click='calculate("+")')
       .button-bar
         a.button(ng-click='addDisplay(4)') 4
         a.button(ng-click='addDisplay(5)') 5
         a.button(ng-click='addDisplay(6)') 6
-        a.button(ng-click='calculate("-")') -
+        a.button.i.icon.ion-minus(ng-click='calculate("-")')
       .button-bar
         a.button(ng-click='addDisplay(1)') 1
         a.button(ng-click='addDisplay(2)') 2
         a.button(ng-click='addDisplay(3)') 3
-        a.button(ng-click='calculate("*")') *
+        a.button.i.icon.ion-close(ng-click='calculate("*")')
       .button-bar
         a.button(ng-click='addDisplay(".")') .
         a.button(ng-click='addDisplay(0)') 0
         a.button(ng-click='clearDisplay()') C
-        a.button(ng-click='calculate("/")') /
+        a.button.i.icon.ion-(ng-click='calculate("/")') /
       .button-bar
-        a.button(ng-click='answer()') =
+        a.button.i.icon.ion-(ng-click='answer()') =
 
       .memory {{memory}}
       .operator {{operator}}
