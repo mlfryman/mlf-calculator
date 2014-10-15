@@ -35,14 +35,11 @@ html
       .button-bar
         a.button(ng-click='addDisplay(".")') .
         a.button(ng-click='addDisplay(0)') 0
-        a.button(ng-click='clearDisplay()') C
-        a.button(ng-click='calculate("/")') /
+        a.button(ng-click='clear()') C
+        a.button(ng-click='calculate("/")') &div;
       .button-bar
         a.button.button-balanced(ng-click='answer()') =
 
-      .memory {{memory}}
-      .operator {{operator}}
-
     .bar.bar-footer.bar-dark
-      .title
+      .center
         small &copy; 2014 mlfryman

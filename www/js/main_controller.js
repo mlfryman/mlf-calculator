@@ -35,7 +35,7 @@
       $scope.clearDisplay();
     };
 
-    $scope.clearDisplay = function(){
+    $scope.clear = function(){
       $scope.display = '0';
     };
 
